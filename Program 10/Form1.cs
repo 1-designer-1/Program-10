@@ -32,8 +32,11 @@ namespace Program_10
 
         private void найтиToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            int max = Array.Max();
+            int max = Array.Max(); // до делать 
             textBox2.Text = max.ToString();
+            int Index = Array.IndexOf(max);
+            MessageBox.Show((++Index).ToString());
+
         }
 
         private void очиститьToolStripMenuItem_Click(object sender, EventArgs e)
@@ -54,6 +57,12 @@ namespace Program_10
                             "ИСП-31\n" +
                             "Задание \n" +
                             "Составьте программу вычисления в массиве максимального среди отрицательных элементов и его номера. ", "О программе", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            Array.Clear();
         }
     }
 }
