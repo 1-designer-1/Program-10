@@ -52,6 +52,8 @@ namespace Program_10
             this.label1 = new System.Windows.Forms.Label();
             this.textBox3 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label3 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -66,7 +68,7 @@ namespace Program_10
             this.оПрограммеToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(756, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(756, 30);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -79,7 +81,7 @@ namespace Program_10
             this.очиститьToolStripMenuItem,
             this.выходToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
-            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 24);
+            this.файлToolStripMenuItem.Size = new System.Drawing.Size(59, 26);
             this.файлToolStripMenuItem.Text = "Файл";
             // 
             // добавитьToolStripMenuItem
@@ -118,7 +120,7 @@ namespace Program_10
             // оПрограммеToolStripMenuItem
             // 
             this.оПрограммеToolStripMenuItem.Name = "оПрограммеToolStripMenuItem";
-            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 24);
+            this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(118, 26);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
             // 
@@ -168,6 +170,7 @@ namespace Program_10
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.button5);
             this.groupBox1.Controls.Add(this.groupBox2);
             this.groupBox1.Controls.Add(this.button1);
@@ -183,7 +186,7 @@ namespace Program_10
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(24, 74);
+            this.button5.Location = new System.Drawing.Point(24, 94);
             this.button5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(163, 28);
@@ -194,12 +197,13 @@ namespace Program_10
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.button6);
             this.groupBox2.Controls.Add(this.label2);
             this.groupBox2.Controls.Add(this.textBox3);
             this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.button2);
             this.groupBox2.Controls.Add(this.textBox2);
-            this.groupBox2.Location = new System.Drawing.Point(24, 168);
+            this.groupBox2.Location = new System.Drawing.Point(24, 142);
             this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
@@ -230,7 +234,7 @@ namespace Program_10
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(175, 23);
+            this.button1.Location = new System.Drawing.Point(192, 51);
             this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(133, 28);
@@ -241,7 +245,7 @@ namespace Program_10
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(24, 23);
+            this.textBox1.Location = new System.Drawing.Point(23, 51);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(132, 22);
@@ -250,7 +254,7 @@ namespace Program_10
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(8, 23);
+            this.label1.Location = new System.Drawing.Point(5, 24);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(327, 17);
             this.label1.TabIndex = 3;
@@ -268,11 +272,31 @@ namespace Program_10
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(8, 71);
+            this.label2.Location = new System.Drawing.Point(5, 71);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(126, 17);
             this.label2.TabIndex = 5;
             this.label2.Text = "Номера элемента";
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(168, 92);
+            this.button6.Margin = new System.Windows.Forms.Padding(4);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(133, 28);
+            this.button6.TabIndex = 6;
+            this.button6.Text = "Очистить";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.очиститьToolStripMenuItem_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(20, 30);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(237, 17);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Введите отрицательные значения";
             // 
             // Form1
             // 
@@ -323,6 +347,8 @@ namespace Program_10
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Label label3;
     }
 }
 

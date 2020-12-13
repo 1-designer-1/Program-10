@@ -41,8 +41,9 @@ namespace Program_10
 
         private void очиститьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            textBox1.Clear();
             textBox2.Clear();
+            textBox3.Clear();
+            
         }
 
         private void выходToolStripMenuItem_Click(object sender, EventArgs e)
