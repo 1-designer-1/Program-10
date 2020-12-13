@@ -22,8 +22,8 @@ namespace Program_10
         List<int> Array = new List<int>();
         private void добавитьToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Array.Add(Convert.ToInt32(textBox1.Text));
-            listBox1.Items.Add(Convert.ToInt32(textBox1.Text));
+            Array.Add(Convert.ToInt32(textBox1.Text)); // записываем значение в массив
+            listBox1.Items.Add(Convert.ToInt32(textBox1.Text));// отображает значение в ListBox
             textBox1.Clear();
 
 
@@ -35,8 +35,8 @@ namespace Program_10
             int max = Array.Max(); // до делать 
             textBox2.Text = max.ToString();
             int Index = Array.IndexOf(max);
-            MessageBox.Show((++Index).ToString());
-
+            textBox3.Text = (++Index).ToString();
+           
         }
 
         private void очиститьToolStripMenuItem_Click(object sender, EventArgs e)
